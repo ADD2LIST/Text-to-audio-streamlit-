@@ -22,11 +22,11 @@ if st.button("Convert to Audio"):
 
             audio = BytesIO()
 
-            tts.save(audio)
+            tts.save(audio, format='mp3')
 
             audio.seek(0)
 
-            st.audio(audio, format="audio/mp3")
+            st.audio(audio, format='audio/mp3')
 
         except:
 
@@ -36,3 +36,5 @@ if st.button("Convert to Audio"):
 
         st.warning("Please enter some text.")
 
+
+            
